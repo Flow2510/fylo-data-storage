@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    background: url(images/bg-mobile.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "raleway";
+    
+}
+
+section{
+    margin: 1rem auto;
+    max-width: 310px;
+    background-color: hsl(228, 56%, 26%);
+     
+}
+
+.main_section{
+    border-radius: 0.5rem 7rem 0.5rem 0.5rem;
+    padding: 2.5rem 7rem 2.5rem 2.5rem;
+}
+
+.storage_section{
+    border-radius: 0.5rem;
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+    color: hsl(243, 100%, 93%); 
+}
+
+.logo{
+    max-width: 140px;
+}
+
+.icon_bloc_container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.icon_container{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 0.7rem;
+    padding: 0.7rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon_container img{
+   width: 22px;
+   height: auto;  
+   margin: auto;
+}
+
+.storage_section > p{
+    text-align: center;
+}
+
+.size_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.size_container p{
+    width: fit-content;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.bar_container{
+    background-color: hsla(229, 57%, 11%, 0.5);
+    padding: 2px;
+    border-radius: 9999px;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.bar_inside{
+    height: 15px;
+    width: 75%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius: 9999px;
+    padding: 2px;
+}
+
+.bar_circle{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    display: flex;
+    float: right;
+    left: 0.75rem;
+}
+
+.dark_grey_color{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: hsl(229, 7%, 55%);
+    font-weight: 650;
+    margin-left: 1rem;
+    vertical-align: super;
+    letter-spacing: 0px;
+}
+
+.double_size_font{
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(229, 57%, 11%);
+}
+
+.storage_left_mobile{
+    background-color: white;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    top: -4rem;
+    margin: auto;
+}
+
+.storage_left_desktop{
+    display: none;
+}
+
+@media screen and (min-width:400px) and (max-width:1400px) {
+    .main_section{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    main{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 1000px;
+        zoom: 1.2;
+    }
+
+    section{
+        margin: auto;
+        max-width: none;
+    }
+
+    .icon_container{
+        width: 50px;
+    }
+
+    .main_section{
+        width: 450px;
+        margin: 0 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10rem;
+    }
+
+    .storage_section{
+        width: 750px;
+        margin-top: 5rem;
+        padding: 3rem 2.5rem 3rem 2.5rem;
+        margin: 5rem 1rem 0 1rem;
+    }
+
+    .bar_circle{
+        left: 2.4rem;
+        position: relative;
+    }
+
+    .storage_section > p{
+        text-align: left;
+    }
+
+    .storage_left_mobile{
+        display: none;
+    }
+
+    .storage_left_desktop{
+        display: flex;
+        background-color: white;
+        width: fit-content;
+        border-radius: 1rem 1rem 0 1rem;
+        padding: 0.7rem 1rem;
+        height: fit-content;
+        text-wrap: nowrap;
+        float: right;
+        position: relative;
+        top: -5.5rem;
+    }
+        
+
+    body{
+        background: url(images/bg-desktop.png) no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom;
+        background-color: hsl(229, 57%, 11%);
+    }
+
+}
